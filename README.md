@@ -40,4 +40,4 @@
 </div>
 ```
 3.引入swperDemo.js:<br>
-*
+  * 传入的参数应为object对象
