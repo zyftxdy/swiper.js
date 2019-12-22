@@ -40,10 +40,18 @@
 </div>
 ```
 3.引入swperDemo.js:<br>
-  * 传入的参数应为object对象
+  * 传入的参数应为object对象(也可不传参数，容器默认宽为800px，高为350px，动画时间为1000ms)
   * width 为swiper容器的宽度
   * height 为swiper容器的高度
   * time  为每一个轮播图动画完成所需的时间
-  
+  * 调用方法:
+  ```javascript
+  <script type="text/javascript">
+    window.onload = function(){
+	var swiperDemo = new Swiper();
+	swiperDemo.init();		
+    }
+  </script>
+  ```
  # 
  后续不断优化
