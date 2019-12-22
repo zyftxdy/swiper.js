@@ -46,6 +46,7 @@
   * time  为每一个轮播图动画完成所需的时间
   * 调用方法:
   ```javascript
+  <script src="js/SwiperDemo.js" type="text/javascript"></script>
   <script type="text/javascript">
     window.onload = function(){
 	var swiperDemo = new Swiper();
