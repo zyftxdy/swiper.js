@@ -41,3 +41,9 @@
 ```
 3.引入swperDemo.js:<br>
   * 传入的参数应为object对象
+  * width 为swiper容器的宽度
+  * height 为swiper容器的高度
+  * time  为每一个轮播图动画完成所需的时间
+  
+ # 
+ 后续不断优化
