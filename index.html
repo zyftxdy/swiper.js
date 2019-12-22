@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	</head>
+	<body>
+		<div id="swiper">
+			<div class="swiper_control swiper_pre">
+				<i class="iconfont icon-left_x"></i>
+			</div>
+			<div class="swiper_list">
+				<ul>
+					<li>
+						<a href="#"><img src="img/01.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/02.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/03.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/04.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/05.jpg"/></a>
+					</li>
+				</ul>
+			</div>
+			<div class="swiper_indicators">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="swiper_control swiper_next">
+				<i class="iconfont icon-right_x"></i>
+			</div>
+		</div>
+	</body>
+	<script src="js/SwiperDemo.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		/*var swiper = new Swiper();*/
+		window.onload = function(){
+			var swiperDemo = new Swiper();
+			
+			swiperDemo.init();	
+			
+		}
+	</script>
+</html>

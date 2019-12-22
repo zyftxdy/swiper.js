@@ -1,0 +1,90 @@
+			*{
+				padding: 0;
+				margin: 0;
+				border: 0;
+			}
+			#swiper ul li{
+				list-style: none;
+			}
+			#swiper{
+				position: absolute;
+			    left: 50%;
+			    top: 50%;
+			    width: 800px;
+			    height: 350px;
+			    overflow: hidden;
+			    background-color: beige;
+    			transform: translate(-50%,-50%);	
+			}
+			#swiper .swiper_list{
+				width: 100%;
+				height: 100%;
+			}
+			#swiper .swiper_list ul{
+				width: 4000px;
+				height: 350px;
+				padding: 0;
+				position: relative;
+				left: 0px;
+			}
+			#swiper .swiper_list ul li{
+				float: left;
+				width: 800px;
+				height: 350px;
+			}
+			#swiper .swiper_list ul li img{
+				width: 100%;
+				height: 100%;
+			}
+			#swiper .swiper_control{
+				position: absolute;
+			    z-index: 1;
+			    width: 25px;
+			    height: 35px;
+			    line-height: 35px;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    border: 0;
+			    background: rgba(0,0,0,.15);
+			    cursor: pointer;
+			}
+			#swiper .swiper_pre{
+				left: 0px;
+				border-top-right-radius: 15px;
+			    border-bottom-right-radius: 15px;
+			}
+			#swiper .swiper_next{
+				right: 0px;
+				border-top-left-radius: 15px;
+			    border-bottom-left-radius: 15px;
+			}
+			#swiper .icon-left_x,.icon-right_x{
+				position: relative;
+    			left: 4px;
+			}
+			#swiper .swiper_indicators{
+				position: absolute;
+			    bottom: 10px;
+			    left: 20px;
+			}
+			.swiper_indicators span{
+				width: 10px;
+			    height: 10px;
+			    border-radius: 50%;
+			    border: 1px solid rgba(0,0,0,.05);
+			    display: block;
+			    background: rgba(255,255,255,.4);
+			    overflow: hidden;
+			    float: left;
+			    margin-left: 5px;
+			}
+			.swiper_indicators span.active{
+				background: rgba(255,255,255,.9);;
+				box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.2);
+				transition: all .5s linear;
+			}
+			.swiper_indicators span:hover{
+				background: rgba(255,255,255,.9);
+				box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.2);
+				transition: all .5s linear;
+			}
