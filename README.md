@@ -1,6 +1,6 @@
 # -js-
 一个基于js的简易轮播图插件
-#使用方法
+# 使用方法
 1.引入normalize.css重置样式;iconfont.css使用到的字体图标;swiper.css为页面结构所用样式<br>
 2.页面结构如下:
 ```javaScript
