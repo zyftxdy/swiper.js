@@ -66,11 +66,8 @@
 			_this.dom.style.height = _this.objs.height +'px';
 			//设置li宽高
 			for(var i=0;i<_this.list.length;i++){
-				//不这么设置i始终是5
-				(function(i){
-					_this.list[i].style.width = _this.objs.width+'px';
-					_this.list[i].style.height = _this.objs.height+'px';
-				})(i)
+				_this.list[i].style.width = _this.objs.width+'px';
+				_this.list[i].style.height = _this.objs.height+'px';
 			}
 			//设置span的宽高
 			/*for(var i=0;i<_this.swiperSpan.length;i++){
@@ -235,9 +232,11 @@
 	
 	//判断style样式
 	function getStyle(Ele,attr){  
+		//行内查找
 		if (Ele.currentStyle) {
 		    return Ele.currentStyle[attr];
 		}else{
+			//在style里面查找
 			return window.getComputedStyle(Ele,null)[attr];  
 		}    
 	}
