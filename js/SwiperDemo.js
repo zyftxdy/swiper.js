@@ -56,18 +56,14 @@
 		setSwiper:function(){
 			var _this = this;
 			//设置swiper宽高
-			_this.swiper.style.width = _this.objs.width+'px';
-			_this.swiper.style.height = _this.objs.height +'px';
+			setStyle(_this.swiper,{"width":_this.objs.width+'px',"height":_this.objs.height +'px'});
 			//设置ul外层div宽高
-			_this.swiperList.style.width = _this.objs.width+'px';
-			_this.swiperList.style.height = _this.objs.height +'px';
+			setStyle(_this.swiperList,{"width":_this.objs.width+'px',"height":_this.objs.height +'px'});
 			//设置ul宽高
-			_this.dom.style.width = _this.objs.width*5+'px';
-			_this.dom.style.height = _this.objs.height +'px';
+			setStyle(_this.dom,{"width":_this.objs.width*5+'px',"height":_this.objs.height +'px'});
 			//设置li宽高
 			for(var i=0;i<_this.list.length;i++){
-				_this.list[i].style.width = _this.objs.width+'px';
-				_this.list[i].style.height = _this.objs.height+'px';
+				setStyle(_this.list[i],{"width":_this.objs.width+'px',"height":_this.objs.height +'px'});
 			}
 			//设置span的宽高
 			/*for(var i=0;i<_this.swiperSpan.length;i++){
@@ -187,7 +183,7 @@
 				clearInterval(timer);
 				timer = null;
 			}
-			if( typeof opations == 'object'){
+			if( typeof(opations) == 'object'){
 				timer = setInterval(function(){
 					var flag = true;
 					for(var attr in opations){
@@ -212,7 +208,7 @@
 					}		
 				},1)
 			}else{
-				console.log("opactions应为对象{}");
+				throw ' the opations is not an object';
 			}
 		}
 	}
@@ -240,6 +236,17 @@
 			return window.getComputedStyle(Ele,null)[attr];  
 		}    
 	}
+	//设置元素样式
+	function setStyle(element,opations){
+		if(typeof(opations) != 'object'){
+			throw ' the opations is not an object';
+		}else{
+			for(var k in opations){
+				element.style[k]=opations[k];
+			}
+		}
+	}
+	
 	
 	_global = (function(){ return this || (0, eval)('this'); }());
     if (typeof module !== "undefined" && module.exports) {
